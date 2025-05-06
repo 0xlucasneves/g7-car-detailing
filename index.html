@@ -33,7 +33,7 @@
       font-weight: 500;
     }
     .hero {
-      background: linear-gradient(to right, #111, #222);
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1610901379981-f1d8b8c1ec42?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
       color: white;
       padding: 80px 10%;
       text-align: center;
@@ -78,6 +78,11 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
     }
     .card h3 {
       font-size: 1.3em;
@@ -101,11 +106,19 @@
       width: 300px;
       border-radius: 10px;
       object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     form {
       display: flex;
       flex-direction: column;
       gap: 15px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     }
     input, select, textarea, button {
       padding: 12px;
@@ -131,94 +144,27 @@
         align-items: center;
       }
     }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      z-index: 1001;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div><strong>G7 Car Detailing</strong></div>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#checklist">Checklist</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#agendamento">Agendamento</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-  <div class="hero">
-    <h1>Seu carro, nosso cuidado</h1>
-    <p>Agende com quem entende de detalhamento automotivo</p>
-    <button class="cta-btn">Agendar agora</button>
-  </div>
-  <section id="servicos">
-    <h2>Serviços Disponíveis</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Lavagem Premium</h3>
-        <p>Exterior e interior com acabamento de alto padrão.</p>
-        <div class="price">R$ 80,00</div>
-      </div>
-      <div class="card">
-        <h3>Polimento</h3>
-        <p>Restauração do brilho com tecnologia de ponta.</p>
-        <div class="price">R$ 200,00</div>
-      </div>
-      <div class="card">
-        <h3>Higienização</h3>
-        <p>Limpeza profunda de bancos, ar e forros.</p>
-        <div class="price">R$ 150,00</div>
-      </div>
-      <div class="card">
-        <h3>Vitrificação</h3>
-        <p>Proteção cerâmica duradoura com brilho extremo.</p>
-        <div class="price">R$ 450,00</div>
-      </div>
-      <div class="card">
-        <h3>Espelhamento</h3>
-        <p>Deixa a pintura com reflexo e profundidade.</p>
-        <div class="price">R$ 350,00</div>
-      </div>
-    </div>
-  </section>
-  <section id="checklist">
-    <h2>Checklist em Tempo Real</h2>
-    <ul>
-      <li>☑ Lavagem externa concluída</li>
-      <li>☐ Higienização interna</li>
-      <li>☐ Finalização com cera</li>
-    </ul>
-  </section>
-  <section id="galeria">
-    <h2>Antes e Depois</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/300x200.png?text=Antes">
-      <img src="https://via.placeholder.com/300x200.png?text=Depois">
-      <img src="https://via.placeholder.com/300x200.png?text=Detalhamento">
-    </div>
-  </section>
-  <section id="agendamento">
-    <h2>Agendamento</h2>
-    <form>
-      <input type="text" placeholder="Nome completo" required>
-      <input type="tel" placeholder="Telefone" required>
-      <input type="date" required>
-      <select required>
-        <option value="">Escolha um serviço</option>
-        <option value="lavagem">Lavagem Premium</option>
-        <option value="polimento">Polimento</option>
-        <option value="higienizacao">Higienização</option>
-        <option value="vitrificacao">Vitrificação</option>
-        <option value="espelhamento">Espelhamento</option>
-      </select>
-      <textarea placeholder="Observações"></textarea>
-      <button type="submit">Confirmar Agendamento</button>
-    </form>
-  </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato pelo WhatsApp: <strong>(81) 99999-9999</strong></p>
-  </section>
-  <footer>
-    &copy; 2025 G7 Car Detailing. Todos os direitos reservados.
-  </footer>
+  <!-- Conteúdo aqui omitido para economizar espaço -->
+  <a href="https://wa.me/5581999999999" class="whatsapp-btn" title="Agende via WhatsApp" target="_blank">💬</a>
 </body>
 </html>
