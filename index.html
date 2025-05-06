@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>G7 Car Detailing</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G7 Car Detailing</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">G7 Car Detailing</div>
-        <nav>
-            <a href="#agendar">Agendar</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#checklist">Checklist</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <header>
+    <h1>G7 Car Detailing</h1>
+    <nav>
+      <a href="#agendar">Agendar</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#antesedepois">Antes/Depois</a>
+      <a href="#pacotes">Pacotes</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <h1>Seu carro, nosso cuidado</h1>
-        <p>Agende seu serviço com quem entende de detalhamento automotivo.</p>
-        <a href="#agendar" class="btn">Agendar agora</a>
-    </section>
+  <section class="hero">
+    <h2>Seu carro, nosso cuidado</h2>
+    <p>Agende com quem entende de detalhamento automotivo.</p>
+    <a href="#agendar" class="btn">Agendar agora</a>
+  </section>
 
-    <section id="servicos" class="services">
-        <h2>Serviços</h2>
-        <div class="cards">
-            <div class="card"><h3>Lavagem Premium</h3><p>Exterior e interior com acabamento de alto padrão.</p></div>
-            <div class="card"><h3>Polimento</h3><p>Restaure o brilho da pintura com tecnologia de ponta.</p></div>
-            <div class="card"><h3>Higienização</h3><p>Limpeza profunda de bancos, ar e forros.</p></div>
-        </div>
-    </section>
+  <section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
+      <div class="card"><h3>Lavagem Premium</h3><p>R$ 100</p></div>
+      <div class="card"><h3>Polimento</h3><p>R$ 250</p></div>
+      <div class="card"><h3>Higienização</h3><p>R$ 200</p></div>
+      <div class="card"><h3>Cristalização</h3><p>R$ 300</p></div>
+    </div>
+  </section>
 
-    <section id="checklist" class="checklist">
-        <h2>Checklist em Tempo Real</h2>
-        <ul id="checklist-itens">
-            <li><input type="checkbox" checked> Lavagem externa concluída</li>
-            <li><input type="checkbox"> Higienização interna</li>
-            <li><input type="checkbox"> Finalização com cera</li>
-        </ul>
-    </section>
+  <section id="checklist" class="checklist">
+    <h2>Checklist do Carro</h2>
+    <ul>
+      <li><input type="checkbox" checked> Lavagem externa</li>
+      <li><input type="checkbox"> Aspiração interna</li>
+      <li><input type="checkbox"> Finalização com cera</li>
+    </ul>
+  </section>
 
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <p>Fale conosco pelo WhatsApp ou Instagram.</p>
-        <p><strong>WhatsApp:</strong> (81) 99999-9999</p>
-    </section>
+  <section id="antesedepois" class="antes-depois">
+    <h2>Antes & Depois</h2>
+    <img src="img/antes.jpg" alt="Antes" class="side-img">
+    <img src="img/depois.jpg" alt="Depois" class="side-img">
+  </section>
 
-    <footer>
-        <p>&copy; 2025 G7 Car Detailing. Todos os direitos reservados.</p>
-    </footer>
+  <section id="pacotes" class="pacotes">
+    <h2>Pacotes</h2>
+    <table>
+      <tr><th>Pacote</th><th>Serviços</th><th>Preço</th></tr>
+      <tr><td>Essencial</td><td>Lavagem + Aspirador</td><td>R$ 100</td></tr>
+      <tr class="destaque"><td>Completo</td><td>Essencial + Higienização</td><td>R$ 250</td></tr>
+      <tr><td>Luxo</td><td>Completo + Polimento</td><td>R$ 450</td></tr>
+    </table>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="depoimentos" class="depoimentos">
+    <h2>O que dizem nossos clientes</h2>
+    <blockquote>"Meu carro ficou como novo, atendimento 10/10!" - João R.</blockquote>
+    <blockquote>"Confiança total no trabalho da G7. Super recomendo!" - Camila S.</blockquote>
+  </section>
+
+  <section id="agendar" class="agendar">
+    <h2>Agende seu Horário</h2>
+    <form>
+      <input type="text" placeholder="Nome completo" required>
+      <input type="tel" placeholder="Telefone" required>
+      <input type="date" required>
+      <select required>
+        <option value="">Escolha o serviço</option>
+        <option value="lavagem">Lavagem Premium</option>
+        <option value="polimento">Polimento</option>
+      </select>
+      <button type="submit">Confirmar</button>
+    </form>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Fale Conosco</h2>
+    <p>WhatsApp: (81) 99999-9999</p>
+    <p>Instagram: @g7cardetailing</p>
+    <iframe src="https://maps.google.com/maps?q=Recife&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 G7 Car Detailing</p>
+  </footer>
+
+  <a href="https://wa.me/5581999999999?text=Olá,%20quero%20agendar%20um%20serviço!" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
