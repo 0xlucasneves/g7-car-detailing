@@ -1,2 +1,2 @@
 
-console.log('Site G7 Car Detailing carregado com sucesso');
+console.log("G7 Car Detailing carregado com sucesso!");
