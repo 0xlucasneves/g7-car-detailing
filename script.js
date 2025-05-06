@@ -1,0 +1,1 @@
+console.log('G7 Car Detailing Loaded');
